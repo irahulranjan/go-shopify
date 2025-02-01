@@ -61,6 +61,7 @@ type VariantCommonFields struct {
 	RequireShipping      bool             `json:"requires_shipping,omitempty"`
 	AdminGraphqlAPIID    string           `json:"admin_graphql_api_id,omitempty"`
 	Metafields           []Metafield      `json:"metafields,omitempty"`
+	Tracked              bool             `json:"tracked,omitempty"`
 
 	// TODO: big commerce merge cleanup
 	BcOptionValues []BcOptionValues `json:"option_values,omitempty"`

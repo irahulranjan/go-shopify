@@ -56,7 +56,7 @@ type ProductCommonFields struct {
 	UpdatedAt                      *time.Time      `json:"updated_at,omitempty"`
 	PublishedAt                    *time.Time      `json:"published_at,omitempty"`
 	PublishedScope                 string          `json:"published_scope,omitempty"`
-	Tags                           string          `json:"tags,omitempty"`
+	Tags                           []string        `json:"tags,omitempty"`
 	Options                        []ProductOption `json:"options,omitempty"`
 	Image                          Image           `json:"image,omitempty"`
 	Images                         []Image         `json:"images,omitempty"`
